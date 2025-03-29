@@ -1,0 +1,7 @@
+pages/InventoryPage.class
+utils/ConfigReader.class
+utils/ScreenShotUtils.class
+driver/WebdriverFactory.class
+pages/LoginPage.class
+base/BaseTest.class
+utils/AllureUtils.class
