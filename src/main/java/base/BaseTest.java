@@ -11,6 +11,8 @@ import org.testng.annotations.BeforeMethod;
 
 import driver.WebdriverFactory;
 import io.qameta.allure.Allure;
+import pages.CartPage;
+import pages.CheckoutPage;
 import pages.InventoryPage;
 import pages.LoginPage;
 import utils.ConfigReader;
@@ -19,12 +21,16 @@ public class BaseTest {
 	public WebDriver driver;
 	public LoginPage loginPage;
 	public InventoryPage inventoryPage;
+	public CartPage cartPage;
+	public CheckoutPage checkoutPage;
 
 	@BeforeMethod(alwaysRun = true)
 	public void setup() {
 		driver = WebdriverFactory.getDriver();
 		loginPage = new LoginPage(driver);
 		inventoryPage = new InventoryPage(driver);
+		cartPage = new CartPage(driver);
+		checkoutPage = new CheckoutPage(driver);
 		driver.get(ConfigReader.getProperty("base.url"));
 	}
 

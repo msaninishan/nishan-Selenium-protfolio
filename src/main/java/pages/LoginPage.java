@@ -12,6 +12,7 @@ public class LoginPage {
 	private By usernameField = By.id("user-name");
 	private By passwordFiled = By.id("password");
 	private By loginButton = By.id("login-button");
+	private By errorMessage = By.xpath("//div[@class='error-message-container error']/h3");
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
@@ -28,6 +29,18 @@ public class LoginPage {
 
 		return new InventoryPage(driver);
 
+	}
+
+	public void invaidLogin(String username, String password) {
+		driver.findElement(usernameField).sendKeys(username);
+		driver.findElement(passwordFiled).sendKeys(password);
+		driver.findElement(loginButton).click();
+		AllureUtils.captureScreenshot(driver);
+	}
+
+	public String errorMessage() {
+
+		return driver.findElement(errorMessage).getText();
 	}
 
 }

@@ -15,6 +15,8 @@ public class InventoryPage {
 	private By productSortContainer = By.className("product_sort_container");
 	private By inventory_item_name = By.className("inventory_item_name");
 	private By inventory_item_price = By.className("inventory_item_price");
+	private By addToCartButton =By.className("shopping_cart_link");
+	
 	public InventoryPage(WebDriver driver) {
 		this.driver = driver;
 
@@ -39,6 +41,17 @@ public class InventoryPage {
 	public List<Double> getProductPrices() {
 		return driver.findElements(inventory_item_price).stream()
 				.map(element -> Double.parseDouble(element.getText().replace("$", ""))).collect(Collectors.toList());
+	}
+
+	public InventoryPage addProductToCart(String productName) {
+		driver.findElement(
+				By.xpath("//div[text()='" + productName + "']//ancestor::div[@class='inventory_item']//button"))
+				.click();
+		return this;
+	}
+
+	public void goToCart() {
+		driver.findElement(addToCartButton).click();
 	}
 
 }

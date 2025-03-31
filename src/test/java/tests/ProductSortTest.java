@@ -4,13 +4,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import org.testng.Assert;
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
-import utils.ScreenShotUtils;
 
-@Listeners(ScreenShotUtils.class)
+
 
 public class ProductSortTest extends BaseTest {
 

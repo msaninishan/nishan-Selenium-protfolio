@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>product.xml</span>
+                    <span>testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                    <span class="method-stats">6 methods, 4 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -101,6 +101,21 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ProductSortTest" class="method navigator-link" hash-for-method="testSortByNameAscending">testSortByNameAscending</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ProductSortTest" class="method navigator-link" hash-for-method="testSortByNameDescending">testSortByNameDescending</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="tests.ProductSortTest" class="method navigator-link" hash-for-method="testSortByPriceHighToLow">testSortByPriceHighToLow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Suite" title="tests.ProductSortTest" class="method navigator-link" hash-for-method="testSortByPriceLowToHigh">testSortByPriceLowToHigh</a> <!-- method navigator-link -->
@@ -122,17 +137,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.ProductSortTest" class="method navigator-link" hash-for-method="testSortByNameAscending">testSortByNameAscending</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.ProductSortTest" class="method navigator-link" hash-for-method="testSortByNameDescending">testSortByNameDescending</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.ProductSortTest" class="method navigator-link" hash-for-method="testSortByPriceHighToLow">testSortByPriceHighToLow</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -155,18 +160,165 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="testSortByNameAscending">
+                  </a> <!-- testSortByNameAscending -->
+                  <span class="method-name">testSortByNameAscending</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.product_sort_container&quot;}
+  (Session info: chrome=134.0.6998.166)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.6.6&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2987f9caabe281d974fb4d6eb70973df, findElement {value=product_sort_container, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/9g/_h7t81qn27j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55866}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55866/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2987f9caabe281d974fb4d6eb70973df
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at pages.InventoryPage.selectSortingOption(InventoryPage.java:30)
+	at tests.ProductSortTest.testSortByNameAscending(ProductSortTest.java:27)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSortByNameDescending">
+                  </a> <!-- testSortByNameDescending -->
+                  <span class="method-name">testSortByNameDescending</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.product_sort_container&quot;}
+  (Session info: chrome=134.0.6998.166)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.6.6&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2987f9caabe281d974fb4d6eb70973df, findElement {value=product_sort_container, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/9g/_h7t81qn27j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55866}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55866/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 2987f9caabe281d974fb4d6eb70973df
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at pages.InventoryPage.selectSortingOption(InventoryPage.java:30)
+	at tests.ProductSortTest.testSortByNameDescending(ProductSortTest.java:37)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testSortByPriceHighToLow">
+                  </a> <!-- testSortByPriceHighToLow -->
+                  <span class="method-name">testSortByPriceHighToLow</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.product_sort_container&quot;}
+  (Session info: chrome=134.0.6998.166)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.6.6&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6a7a44cf63f1f47a7aac7f2a2cf7a8b, findElement {value=product_sort_container, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/9g/_h7t81qn27j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55941}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55941/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6a7a44cf63f1f47a7aac7f2a2cf7a8b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at pages.InventoryPage.selectSortingOption(InventoryPage.java:30)
+	at tests.ProductSortTest.testSortByPriceHighToLow(ProductSortTest.java:57)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testSortByPriceLowToHigh">
                   </a> <!-- testSortByPriceLowToHigh -->
                   <span class="method-name">testSortByPriceLowToHigh</span>
-                  <div class="stack-trace">java.lang.AssertionError: failed
-	at tests.ProductSortTest.testSortByPriceLowToHigh(ProductSortTest.java:50)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 30 stack frames
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.product_sort_container&quot;}
+  (Session info: chrome=134.0.6998.166)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.6.6&apos;, java.version: &apos;21.0.4&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b6a7a44cf63f1f47a7aac7f2a2cf7a8b, findElement {value=product_sort_container, using=class name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/9g/_h7t81qn27j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:55941}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:55941/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: b6a7a44cf63f1f47a7aac7f2a2cf7a8b
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at pages.InventoryPage.selectSortingOption(InventoryPage.java:30)
+	at tests.ProductSortTest.testSortByPriceLowToHigh(ProductSortTest.java:47)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+... Removed 14 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin">
+                  </a> <!-- testLogin -->
+                  <span class="method-name">testLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -180,41 +332,21 @@
                   <span class="method-name">Verify_the_product_list_is_displayed_after_login</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSortByNameAscending">
-                  </a> <!-- testSortByNameAscending -->
-                  <span class="method-name">testSortByNameAscending</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSortByNameDescending">
-                  </a> <!-- testSortByNameDescending -->
-                  <span class="method-name">testSortByNameDescending</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSortByPriceHighToLow">
-                  </a> <!-- testSortByPriceHighToLow -->
-                  <span class="method-name">testSortByPriceHighToLow</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/presidio/eclipse-workspace/selenium-automation/product.xml</span>
+            <span class="header-content">/Users/presidio/eclipse-workspace/selenium-automation/testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
       &lt;class name=&quot;tests.ProductSortTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
@@ -229,7 +361,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -255,32 +387,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testSortByPriceHighToLow')
+data.setCell(0, 1, 'testSortByNameDescending')
 data.setCell(0, 2, 'tests.ProductSortTest')
-data.setCell(0, 3, 562);
+data.setCell(0, 3, 21463);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testSortByNameDescending')
+data.setCell(1, 1, 'testSortByPriceHighToLow')
 data.setCell(1, 2, 'tests.ProductSortTest')
-data.setCell(1, 3, 554);
+data.setCell(1, 3, 21459);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testSortByPriceLowToHigh')
 data.setCell(2, 2, 'tests.ProductSortTest')
-data.setCell(2, 3, 554);
+data.setCell(2, 3, 11059);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Verify_the_product_list_is_displayed_after_login')
+data.setCell(3, 1, 'testSortByNameAscending')
 data.setCell(3, 2, 'tests.ProductSortTest')
-data.setCell(3, 3, 551);
+data.setCell(3, 3, 11043);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testSortByNameAscending')
+data.setCell(4, 1, 'Verify_the_product_list_is_displayed_after_login')
 data.setCell(4, 2, 'tests.ProductSortTest')
-data.setCell(4, 3, 529);
+data.setCell(4, 3, 1557);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testLogin')
+data.setCell(5, 2, 'tests.LoginTest')
+data.setCell(5, 3, 1124);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -306,6 +442,13 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">tests.ProductSortTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
@@ -313,61 +456,81 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">Verify_the_product_list_is_displayed_after_login</span>
-                <span class="method-start">3161 ms</span>
+                <span class="method-start">3362 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">testLogin</span>
+                <span class="method-start">3772 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=testLogin status=SUCCESS method=LoginTest.testLogin()[pri:0, instance:tests.LoginTe...)</span>
+                <span class="method-start">4903 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ProductSortTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">teardown([TestResult name=Verify_the_product_list_is_displayed_after_login status=SUCCESS method=ProductSortT...)</span>
-                <span class="method-start">3732 ms</span>
+                <span class="method-start">4921 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">3844 ms</span>
+                <span class="method-start">5035 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">5046 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testSortByNameAscending</span>
-                <span class="method-start">6563 ms</span>
+                <span class="method-start">7387 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=testSortByNameAscending status=SUCCESS method=ProductSortTest.testSortByNameAscendi...)</span>
-                <span class="method-start">7093 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">7193 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testSortByNameDescending</span>
-                <span class="method-start">10164 ms</span>
+                <span class="method-start">7571 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=testSortByNameDescending status=SUCCESS method=ProductSortTest.testSortByNameDescen...)</span>
-                <span class="method-start">10719 ms</span>
+                <span class="method-name">teardown([TestResult name=testSortByNameAscending status=FAILURE method=ProductSortTest.testSortByNameAscendi...)</span>
+                <span class="method-start">19019 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">10833 ms</span>
+                <span class="method-start">29442 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method after">
+                <span class="method-name">teardown([TestResult name=testSortByNameDescending status=FAILURE method=ProductSortTest.testSortByNameDescen...)</span>
+                <span class="method-start">29628 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">30046 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testSortByPriceLowToHigh</span>
-                <span class="method-start">14145 ms</span>
+                <span class="method-start">31965 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testSortByPriceHighToLow</span>
+                <span class="method-start">32199 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown([TestResult name=testSortByPriceLowToHigh status=FAILURE method=ProductSortTest.testSortByPriceLowTo...)</span>
-                <span class="method-start">15172 ms</span>
+                <span class="method-start">43609 ms</span>
               </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">15662 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testSortByPriceHighToLow</span>
-                <span class="method-start">18522 ms</span>
-              </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=testSortByPriceHighToLow status=SUCCESS method=ProductSortTest.testSortByPriceHighT...)</span>
-                <span class="method-start">19085 ms</span>
+                <span class="method-name">teardown([TestResult name=testSortByPriceHighToLow status=FAILURE method=ProductSortTest.testSortByPriceHighT...)</span>
+                <span class="method-start">54367 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
