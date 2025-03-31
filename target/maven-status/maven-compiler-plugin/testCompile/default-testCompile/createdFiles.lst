@@ -1,3 +1,6 @@
 tests/LoginTest.class
+tests/AddToCartTest.class
+tests/CompletePuchrchaseTest.class
+tests/RemoveProductTest.class
 tests/ProductSortTest.class
 tests/LoginTest1.class

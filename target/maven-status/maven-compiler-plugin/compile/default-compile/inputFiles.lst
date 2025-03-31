@@ -1,6 +1,9 @@
 /Users/presidio/eclipse-workspace/selenium-automation/src/main/java/utils/AllureUtils.java
 /Users/presidio/eclipse-workspace/selenium-automation/src/main/java/utils/ScreenShotUtils.java
 /Users/presidio/eclipse-workspace/selenium-automation/src/main/java/utils/ConfigReader.java
+/Users/presidio/eclipse-workspace/selenium-automation/src/main/java/pages/CartPage.java
+/Users/presidio/eclipse-workspace/selenium-automation/src/main/java/utils/ExcelUtils.java
+/Users/presidio/eclipse-workspace/selenium-automation/src/main/java/pages/CheckoutPage.java
 /Users/presidio/eclipse-workspace/selenium-automation/src/main/java/pages/InventoryPage.java
 /Users/presidio/eclipse-workspace/selenium-automation/src/main/java/pages/LoginPage.java
 /Users/presidio/eclipse-workspace/selenium-automation/src/main/java/driver/WebdriverFactory.java

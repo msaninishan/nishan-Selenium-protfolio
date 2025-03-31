@@ -1,17 +1,26 @@
 package tests;
 
+import java.io.IOException;
 import java.util.Collections;
 import java.util.List;
 
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
+import utils.ExcelUtils;
 
 public class CompletePuchrchaseTest extends BaseTest {
+	
+	@DataProvider(name = "checkoutDataFromExcel")
+	public Object[][] getCheckoutData() throws IOException {
+		String filePath = "src/test/resources/TestData.xlsx";
+		return ExcelUtils.readExcelData(filePath, "CheckoutData");
+	}
 
-	@Test
-	public void testCompletePurchase() {
+	@Test(dataProvider = "checkoutDataFromExcel")
+	public void testCheckoutWithDifferentUsers(String firstName, String lastName, String zipCode) {
 		loginPage.login();
 		List<String> selectedProducts = Collections.singletonList("Sauce Labs Backpack");
 
@@ -21,10 +30,11 @@ public class CompletePuchrchaseTest extends BaseTest {
 		}
 		inventoryPage.goToCart();
 		cartPage.clickCheckout();
-		checkoutPage.enterBillingDetails("nasu", "esu", "12345");
+		checkoutPage.enterBillingDetails(firstName, lastName, zipCode);
 		checkoutPage.completePurchase();
 
-		Assert.assertTrue(checkoutPage.isOrderSuccessDisplayed(), "order success message is not displayed");
+		Assert.assertTrue(checkoutPage.isOrderSuccessDisplayed(),
+				"Order success message not displayed for " + firstName);
 	}
 
 }

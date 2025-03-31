@@ -1,5 +1,8 @@
+pages/CartPage.class
 pages/InventoryPage.class
 utils/ConfigReader.class
+utils/ExcelUtils.class
+pages/CheckoutPage.class
 utils/ScreenShotUtils.class
 driver/WebdriverFactory.class
 pages/LoginPage.class
