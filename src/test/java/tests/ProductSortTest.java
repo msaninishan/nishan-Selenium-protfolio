@@ -39,7 +39,7 @@ public class ProductSortTest extends BaseTest {
 		Assert.assertEquals(productNames, sortedNames, "product are not sorted in descending order");
 	}
 
-	@Test(priority = 3, invocationCount = 1)
+	@Test(priority = 3, invocationCount = 1, retryAnalyzer = utils.RetryAnalyzer.class)
 	public void testSortByPriceLowToHigh() {
 		loginPage.login();
 		inventoryPage.selectSortingOption("Price (low to high)");

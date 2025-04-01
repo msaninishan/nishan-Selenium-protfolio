@@ -12,11 +12,9 @@
       </class> <!-- tests.LoginTest -->
       <class name="tests.ProductSortTest">
         <methods>
-          <include name="Verify_the_product_list_is_displayed_after_login"/>
-          <include name="setup"/>
           <include name="testSortByPriceLowToHigh"/>
+          <include name="setup"/>
           <include name="teardown"/>
-          <include name="testSortByNameAscending"/>
         </methods>
       </class> <!-- tests.ProductSortTest -->
     </classes>

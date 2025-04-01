@@ -3,8 +3,10 @@ pages/InventoryPage.class
 utils/ConfigReader.class
 utils/ExcelUtils.class
 pages/CheckoutPage.class
+utils/RetryAnalyzer.class
 utils/ScreenShotUtils.class
 driver/WebdriverFactory.class
+utils/RetryListener.class
 pages/LoginPage.class
 base/BaseTest.class
 utils/AllureUtils.class

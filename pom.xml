@@ -48,7 +48,12 @@
         <version>5.2.3</version>  <!-- Latest stable version -->
     </dependency>
     
-</dependencies>
+    <dependency>
+    	<groupId>CucumberTest</groupId>
+    	<artifactId>CucumberTest</artifactId>
+    	<version>0.0.1-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
 
 <build>
     <plugins>

@@ -1,5 +1,9 @@
 package tests;
 
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.AssertJUnit;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
@@ -29,7 +33,7 @@ public class LoginTest1 {
 		driver.findElement(By.id("login-button")).click();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.urlContains("inventory"));
-		Assert.assertTrue(driver.getCurrentUrl().contains("inventory"));
+		AssertJUnit.assertTrue(driver.getCurrentUrl().contains("inventory"));
 	}
 
 	@AfterClass

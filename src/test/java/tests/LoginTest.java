@@ -1,6 +1,7 @@
 package tests;
 
 import org.testng.Assert;
+import org.testng.AssertJUnit;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
@@ -19,7 +20,7 @@ public class LoginTest extends BaseTest {
 	public void tesInvalidLogin() {
 		loginPage.invaidLogin("user", "suer");
 
-		Assert.assertEquals(loginPage.errorMessage(),
+		AssertJUnit.assertEquals(loginPage.errorMessage(),
 				"Epic sadface: Username and password do not match any user in this service");
 	}
 
