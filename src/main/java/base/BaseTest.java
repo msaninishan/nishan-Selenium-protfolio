@@ -18,7 +18,7 @@ import pages.LoginPage;
 import utils.ConfigReader;
 
 public class BaseTest {
-	public WebDriver driver;
+	public static WebDriver driver;
 	public LoginPage loginPage;
 	public InventoryPage inventoryPage;
 	public CartPage cartPage;

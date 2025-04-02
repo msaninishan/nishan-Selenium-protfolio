@@ -6,10 +6,12 @@ import java.util.List;
 
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
 import utils.ExcelUtils;
+@Listeners(utils.ScreenShotUtils.class)
 
 public class CompletePuchrchaseTest extends BaseTest {
 	

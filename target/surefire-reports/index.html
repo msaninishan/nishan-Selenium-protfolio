@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">2 suites, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>testng.xml</span>
+                    <span>CompletePurchaseTesttestng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">10 methods, 2 failed,  3 skipped,  5 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,39 +103,10 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.ProductSortTest" class="method navigator-link" hash-for-method="testSortByPriceLowToHigh">testSortByPriceLowToHigh</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.CompletePuchrchaseTest" class="method navigator-link" hash-for-method="testCheckoutWithDifferentUsers(Bob, Johnson, 45678.0)">testCheckoutWithDifferentUsers(Bob, Johnson, 45678.0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Retried methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
-                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.ProductSortTest" class="method navigator-link" hash-for-method="testSortByPriceLowToHigh">testSortByPriceLowToHigh</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.ProductSortTest" class="method navigator-link" hash-for-method="testSortByPriceLowToHigh">testSortByPriceLowToHigh</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.ProductSortTest" class="method navigator-link" hash-for-method="testSortByPriceLowToHigh">testSortByPriceLowToHigh</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -146,119 +117,15 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.ProductSortTest" class="method navigator-link" hash-for-method="Verify_the_product_list_is_displayed_after_login">Verify_the_product_list_is_displayed_after_login</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.CompletePuchrchaseTest" class="method navigator-link" hash-for-method="testCheckoutWithDifferentUsers(John, Doe, 12345.0)">testCheckoutWithDifferentUsers(John, Doe, 12345.0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.LoginTest" class="method navigator-link" hash-for-method="tesInvalidLogin">tesInvalidLogin</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.ProductSortTest" class="method navigator-link" hash-for-method="testSortByNameAscending">testSortByNameAscending</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.ProductSortTest" class="method navigator-link" hash-for-method="testSortByNameDescending">testSortByNameDescending</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="tests.ProductSortTest" class="method navigator-link" hash-for-method="testSortByPriceHighToLow">testSortByPriceHighToLow</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="tests.CompletePuchrchaseTest" class="method navigator-link" hash-for-method="testCheckoutWithDifferentUsers(Alice, Smith, 98765.0)">testCheckoutWithDifferentUsers(Alice, Smith, 98765.0)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
-                  </li>
-                </ul>
-              </div> <!-- suite-section-content -->
-            </div> <!-- result-section -->
-          </div> <!-- navigator-suite-content -->
-        </div> <!-- rounded-window -->
-      </div> <!-- suite -->
-      <div class="suite">
-        <div class="rounded-window">
-          <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Suite__0_" class="navigator-link">
-              <span class="suite-name border-passed">Suite (0)</span>
-            </a> <!-- navigator-link -->
-          </div> <!-- suite-header light-rounded-window-top -->
-          <div class="navigator-suite-content">
-            <div class="suite-section-title">
-              <span>Info</span>
-            </div> <!-- suite-section-title -->
-            <div class="suite-section-content">
-              <ul>
-                <li>
-                  <a href="#" panel-name="test-xml-Suite__0_" class="navigator-link ">
-                    <span>CompletePurchaseTesttestng.xml</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" panel-name="testlist-Suite__0_" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" panel-name="group-Suite__0_" class="navigator-link ">
-                    <span>0 groups</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" panel-name="times-Suite__0_" class="navigator-link ">
-                    <span>Times</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" panel-name="reporter-Suite__0_" class="navigator-link ">
-                    <span>Reporter output</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" panel-name="ignored-methods-Suite__0_" class="navigator-link ">
-                    <span>Ignored methods</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-                <li>
-                  <a href="#" panel-name="chronological-Suite__0_" class="navigator-link ">
-                    <span>Chronological view</span>
-                  </a> <!-- navigator-link  -->
-                </li>
-              </ul>
-            </div> <!-- suite-section-content -->
-            <div class="result-section">
-              <div class="suite-section-title">
-                <span>Results</span>
-              </div> <!-- suite-section-title -->
-              <div class="suite-section-content">
-                <ul>
-                  <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title passed">Passed methods</span>
-                    <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Suite__0_" class="hide-methods passed suite-Suite__0_"> (hide)</a> <!-- hide-methods passed suite-Suite__0_ -->
-                      <a href="#" panel-name="suite-Suite__0_" class="show-methods passed suite-Suite__0_"> (show)</a> <!-- show-methods passed suite-Suite__0_ -->
-                    </span>
-                    <div class="method-list-content passed suite-Suite__0_">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite__0_" title="tests.CompletePuchrchaseTest" class="method navigator-link" hash-for-method="testCheckoutWithDifferentUsers(John, Doe, 12345.0)">testCheckoutWithDifferentUsers(John, Doe, 12345.0)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite__0_" title="tests.CompletePuchrchaseTest" class="method navigator-link" hash-for-method="testCheckoutWithDifferentUsers(Bob, Johnson, 45678.0)">testCheckoutWithDifferentUsers(Bob, Johnson, 45678.0)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite__0_" title="tests.CompletePuchrchaseTest" class="method navigator-link" hash-for-method="testCheckoutWithDifferentUsers(Alice, Smith, 98765.0)">testCheckoutWithDifferentUsers(Alice, Smith, 98765.0)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content passed suite-Suite__0_ -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -273,106 +140,24 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">tests.LoginTest</span>
+              <span class="class-name">tests.CompletePuchrchaseTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testLogin">
-                  </a> <!-- testLogin -->
-                  <span class="method-name">testLogin</span>
-                  <div class="stack-trace">org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
-Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.6.6&apos;, java.version: &apos;21.0.4&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [86b42dd34777c4396bbd78f360c2b9dc, screenshot []]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/9g/_h7t81qn27j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64605}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64605/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 86b42dd34777c4396bbd78f360c2b9dc
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:546)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:592)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:596)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:322)
-	at utils.AllureUtils.captureScreenshot(AllureUtils.java:20)
-	at pages.LoginPage.login(LoginPage.java:28)
-	at tests.LoginTest.testLogin(LoginTest.java:13)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-Caused by: java.util.concurrent.RejectedExecutionException: Task jdk.internal.net.http.common.SequentialScheduler$SchedulableTask@17a8b0e7 rejected from java.util.concurrent.ThreadPoolExecutor@549d8abc[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 132]
-	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2081)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1376)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.ensureExecutedAsync(HttpClientImpl.java:183)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$DelegatingExecutor.execute(HttpClientImpl.java:175)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:282)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:251)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver.onReadError(Http1AsyncReceiver.java:516)
-	at java.net.http/jdk.internal.net.http.Http1AsyncReceiver$Http1TubeSubscriber.onComplete(Http1AsyncReceiver.java:601)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadSubscription.signalCompletion(SocketTube.java:648)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.read(SocketTube.java:853)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowTask.run(SocketTube.java:181)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler$SchedulableTask.run(SequentialScheduler.java:207)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:280)
-	at java.net.http/jdk.internal.net.http.common.SequentialScheduler.runOrSchedule(SequentialScheduler.java:233)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$InternalReadSubscription.signalReadable(SocketTube.java:782)
-	at java.net.http/jdk.internal.net.http.SocketTube$InternalReadPublisher$ReadEvent.signalEvent(SocketTube.java:965)
-	at java.net.http/jdk.internal.net.http.SocketTube$SocketFlowEvent.handle(SocketTube.java:253)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.handleEvent(HttpClientImpl.java:1467)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.lambda$run$3(HttpClientImpl.java:1412)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.net.http/jdk.internal.net.http.HttpClientImpl$SelectorManager.run(HttpClientImpl.java:1412)
-... Removed 11 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.ProductSortTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSortByPriceLowToHigh">
-                  </a> <!-- testSortByPriceLowToHigh -->
-                  <span class="method-name">testSortByPriceLowToHigh</span>
-                  <div class="stack-trace">java.lang.AssertionError: failed
-	at tests.ProductSortTest.testSortByPriceLowToHigh(ProductSortTest.java:48)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 12 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">tests.ProductSortTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSortByPriceLowToHigh">
-                  </a> <!-- testSortByPriceLowToHigh -->
-                  <span class="method-name">testSortByPriceLowToHigh</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.product_sort_container&quot;}
+                  <a name="testCheckoutWithDifferentUsers(Bob, Johnson, 45678.0)">
+                  </a> <!-- testCheckoutWithDifferentUsers(Bob, Johnson, 45678.0) -->
+                  <span class="method-name">testCheckoutWithDifferentUsers</span>
+                  <span class="parameters">(Bob,Johnson,45678.0)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=134.0.6998.166)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Build info: version: &apos;4.17.0&apos;, revision: &apos;e52b1be057*&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.6.6&apos;, java.version: &apos;21.0.4&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [24a9414a2543382dbfa52956c58fcddf, findElement {using=class name, value=product_sort_container}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/9g/_h7t81qn27j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64767}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64767/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 24a9414a2543382dbfa52956c58fcddf
+Command: [bf6da052575e5240816acb38d3027181, sendKeysToElement {value=[Ljava.lang.CharSequence;@1806bc4c, id=f.0F65DD01F03D17DD06B9A89F2839BFDA.d.F4DD1C41051F69A1B45B0A2F62C94BDE.e.42}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.166, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: /var/folders/9g/_h7t81qn27j...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61122}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:61122/devtoo..., se:cdpVersion: 134.0.6998.166, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (bf6da052575e5240816acb38d3027181)] -&gt; id: first-name]
+Session ID: bf6da052575e5240816acb38d3027181
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
@@ -380,109 +165,18 @@ Session ID: 24a9414a2543382dbfa52956c58fcddf
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-	at pages.InventoryPage.selectSortingOption(InventoryPage.java:32)
-	at tests.ProductSortTest.testSortByPriceLowToHigh(ProductSortTest.java:45)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 14 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSortByPriceLowToHigh">
-                  </a> <!-- testSortByPriceLowToHigh -->
-                  <span class="method-name">testSortByPriceLowToHigh</span>
-                  <div class="stack-trace">java.lang.AssertionError: failed
-	at tests.ProductSortTest.testSortByPriceLowToHigh(ProductSortTest.java:48)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 12 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSortByPriceLowToHigh">
-                  </a> <!-- testSortByPriceLowToHigh -->
-                  <span class="method-name">testSortByPriceLowToHigh</span>
-                  <div class="stack-trace">java.lang.AssertionError: failed
-	at tests.ProductSortTest.testSortByPriceLowToHigh(ProductSortTest.java:48)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 12 stack frames
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.sendKeys(RemoteWebElement.java:110)
+	at pages.CheckoutPage.enterBillingDetails(CheckoutPage.java:23)
+	at tests.CompletePuchrchaseTest.testCheckoutWithDifferentUsers(CompletePuchrchaseTest.java:35)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-skipped -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="tesInvalidLogin">
-                  </a> <!-- tesInvalidLogin -->
-                  <span class="method-name">tesInvalidLogin</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.ProductSortTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="Verify_the_product_list_is_displayed_after_login">
-                  </a> <!-- Verify_the_product_list_is_displayed_after_login -->
-                  <span class="method-name">Verify_the_product_list_is_displayed_after_login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSortByNameAscending">
-                  </a> <!-- testSortByNameAscending -->
-                  <span class="method-name">testSortByNameAscending</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSortByNameDescending">
-                  </a> <!-- testSortByNameDescending -->
-                  <span class="method-name">testSortByNameDescending</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSortByPriceHighToLow">
-                  </a> <!-- testSortByPriceHighToLow -->
-                  <span class="method-name">testSortByPriceHighToLow</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-        </div> <!-- panel Suite -->
-        <div panel-name="suite-Suite__0_" class="panel Suite__0_">
-          <div class="suite-Suite__0_-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">tests.CompletePuchrchaseTest</span>
@@ -498,14 +192,6 @@ Session ID: 24a9414a2543382dbfa52956c58fcddf
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="testCheckoutWithDifferentUsers(Bob, Johnson, 45678.0)">
-                  </a> <!-- testCheckoutWithDifferentUsers(Bob, Johnson, 45678.0) -->
-                  <span class="method-name">testCheckoutWithDifferentUsers</span>
-                  <span class="parameters">(Bob,Johnson,45678.0)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="testCheckoutWithDifferentUsers(Alice, Smith, 98765.0)">
                   </a> <!-- testCheckoutWithDifferentUsers(Alice, Smith, 98765.0) -->
                   <span class="method-name">testCheckoutWithDifferentUsers</span>
@@ -513,28 +199,9 @@ Session ID: 24a9414a2543382dbfa52956c58fcddf
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite__0_-class-passed -->
-        </div> <!-- panel Suite__0_ -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">/Users/presidio/eclipse-workspace/selenium-automation/testng.xml</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-            <pre>
-&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
-&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Test&quot; verbose=&quot;0&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;tests.LoginTest&quot;/&gt;
-      &lt;class name=&quot;tests.ProductSortTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
-&lt;/suite&gt; &lt;!-- Suite --&gt;
-            </pre>
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="test-xml-Suite__0_" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">/Users/presidio/eclipse-workspace/selenium-automation/CompletePurchaseTesttestng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -542,7 +209,7 @@ Session ID: 24a9414a2543382dbfa52956c58fcddf
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Suite (0)&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;utils.RetryListener&quot;/&gt;
   &lt;/listeners&gt;
@@ -551,25 +218,13 @@ Session ID: 24a9414a2543382dbfa52956c58fcddf
       &lt;class name=&quot;tests.CompletePuchrchaseTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
-&lt;/suite&gt; &lt;!-- Suite (0) --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Tests for Suite</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-            <ul>
-              <li>
-                <span class="test-name">Test (2 classes)</span>
-              </li>
-            </ul>
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="testlist-Suite__0_" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Suite (0)</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
@@ -582,13 +237,6 @@ Session ID: 24a9414a2543382dbfa52956c58fcddf
         <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Groups for Suite</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="group-Suite__0_" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Suite (0)</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -607,91 +255,26 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(10);
-data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testSortByPriceLowToHigh')
-data.setCell(0, 2, 'tests.ProductSortTest')
-data.setCell(0, 3, 11734);
-data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testSortByPriceHighToLow')
-data.setCell(1, 2, 'tests.ProductSortTest')
-data.setCell(1, 3, 11241);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testSortByNameDescending')
-data.setCell(2, 2, 'tests.ProductSortTest')
-data.setCell(2, 3, 1482);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'Verify_the_product_list_is_displayed_after_login')
-data.setCell(3, 2, 'tests.ProductSortTest')
-data.setCell(3, 3, 1259);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'testSortByNameAscending')
-data.setCell(4, 2, 'tests.ProductSortTest')
-data.setCell(4, 3, 1253);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'testLogin')
-data.setCell(5, 2, 'tests.LoginTest')
-data.setCell(5, 3, 982);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'testSortByPriceLowToHigh')
-data.setCell(6, 2, 'tests.ProductSortTest')
-data.setCell(6, 3, 964);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testSortByPriceLowToHigh')
-data.setCell(7, 2, 'tests.ProductSortTest')
-data.setCell(7, 3, 963);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testSortByPriceLowToHigh')
-data.setCell(8, 2, 'tests.ProductSortTest')
-data.setCell(8, 3, 952);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'tesInvalidLogin')
-data.setCell(9, 2, 'tests.LoginTest')
-data.setCell(9, 3, 867);
-window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
-return data;
-}
-              </script>
-              <span class="suite-total-time">Total running time: 31 seconds</span>
-              <div id="times-div-Suite">
-              </div> <!-- times-div-Suite -->
-            </div> <!-- times-div -->
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="times-Suite__0_" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Suite (0)</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-            <div class="times-div">
-              <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Suite__0_');
-function tableData_Suite__0_() {
-var data = new google.visualization.DataTable();
-data.addColumn('number', 'Number');
-data.addColumn('string', 'Method');
-data.addColumn('string', 'Class');
-data.addColumn('number', 'Time (ms)');
 data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testCheckoutWithDifferentUsers')
 data.setCell(0, 2, 'tests.CompletePuchrchaseTest')
-data.setCell(0, 3, 1980);
+data.setCell(0, 3, 2277);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testCheckoutWithDifferentUsers')
 data.setCell(1, 2, 'tests.CompletePuchrchaseTest')
-data.setCell(1, 3, 1918);
+data.setCell(1, 3, 2253);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testCheckoutWithDifferentUsers')
 data.setCell(2, 2, 'tests.CompletePuchrchaseTest')
-data.setCell(2, 3, 1917);
-window.suiteTableData['Suite__0_']= { tableData: data, tableDiv: 'times-div-Suite__0_'}
+data.setCell(2, 3, 1364);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
               <span class="suite-total-time">Total running time: 5 seconds</span>
-              <div id="times-div-Suite__0_">
-              </div> <!-- times-div-Suite__0_ -->
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -702,21 +285,7 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Suite__0_" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Suite (0)</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="ignored-methods-Suite__0_" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -729,144 +298,6 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.LoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">tesInvalidLogin</span>
-                <span class="method-start">3550 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testLogin</span>
-                <span class="method-start">3589 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=tesInvalidLogin status=SUCCESS method=LoginTest.tesInvalidLogin()[pri:0, instance:t...)</span>
-                <span class="method-start">4427 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">teardown([TestResult name=testLogin status=FAILURE method=LoginTest.testLogin()[pri:0, instance:tests.LoginTe...)</span>
-                <span class="method-start">4578 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.ProductSortTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">4580 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">4587 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testSortByNameAscending</span>
-                <span class="method-start">5164 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=testSortByNameAscending status=SUCCESS method=ProductSortTest.testSortByNameAscendi...)</span>
-                <span class="method-start">6418 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">6565 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">Verify_the_product_list_is_displayed_after_login</span>
-                <span class="method-start">7154 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=Verify_the_product_list_is_displayed_after_login status=SUCCESS method=ProductSortT...)</span>
-                <span class="method-start">8414 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">8535 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testSortByNameDescending</span>
-                <span class="method-start">8838 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=testSortByNameDescending status=SUCCESS method=ProductSortTest.testSortByNameDescen...)</span>
-                <span class="method-start">10321 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">10455 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testSortByPriceLowToHigh</span>
-                <span class="method-start">11073 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">testSortByPriceHighToLow</span>
-                <span class="method-start">12786 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=testSortByPriceLowToHigh status=SKIP method=ProductSortTest.testSortByPriceLowToHig...)</span>
-                <span class="method-start">22809 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">22944 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=testSortByPriceHighToLow status=SUCCESS method=ProductSortTest.testSortByPriceHighT...)</span>
-                <span class="method-start">24029 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">testSortByPriceLowToHigh</span>
-                <span class="method-start">25445 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=testSortByPriceLowToHigh status=SKIP method=ProductSortTest.testSortByPriceLowToHig...)</span>
-                <span class="method-start">26411 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">26526 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">testSortByPriceLowToHigh</span>
-                <span class="method-start">28772 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=testSortByPriceLowToHigh status=SKIP method=ProductSortTest.testSortByPriceLowToHig...)</span>
-                <span class="method-start">29737 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setup</span>
-                <span class="method-start">29849 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">testSortByPriceLowToHigh</span>
-                <span class="method-start">31980 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=testSortByPriceLowToHigh status=FAILURE method=ProductSortTest.testSortByPriceLowTo...)</span>
-                <span class="method-start">32933 ms</span>
-              </div> <!-- configuration-method after -->
-          </div> <!-- main-panel-content rounded-window-bottom -->
-        </div> <!-- panel -->
-        <div panel-name="chronological-Suite__0_" class="panel">
-          <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Methods in chronological order</span>
-          </div> <!-- main-panel-header rounded-window-top -->
-          <div class="main-panel-content rounded-window-bottom">
-            <div class="chronological-class">
               <div class="chronological-class-name">tests.CompletePuchrchaseTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
@@ -874,35 +305,37 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCheckoutWithDifferentUsers(John, Doe, 12345.0)</span>
-                <span class="method-start">2272 ms</span>
+                <span class="method-start">2673 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown([TestResult name=testCheckoutWithDifferentUsers status=SUCCESS method=CompletePuchrchaseTest.testChe...)</span>
-                <span class="method-start">4191 ms</span>
+                <span class="method-start">5248 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">4311 ms</span>
+                <span class="method-start">5374 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testCheckoutWithDifferentUsers(Alice, Smith, 98765.0)</span>
-                <span class="method-start">6558 ms</span>
+                <span class="method-start">7693 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown([TestResult name=testCheckoutWithDifferentUsers status=SUCCESS method=CompletePuchrchaseTest.testChe...)</span>
-                <span class="method-start">8478 ms</span>
+                <span class="method-start">10241 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">8601 ms</span>
+                <span class="method-start">10364 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testCheckoutWithDifferentUsers(Bob, Johnson, 45678.0)</span>
-                <span class="method-start">10755 ms</span>
+                <span class="method-start">12679 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">teardown([TestResult name=testCheckoutWithDifferentUsers status=SUCCESS method=CompletePuchrchaseTest.testChe...)</span>
-                <span class="method-start">12736 ms</span>
+                <span class="method-name">teardown([TestResult name=testCheckoutWithDifferentUsers status=FAILURE method=CompletePuchrchaseTest.testChe...)</span>
+                <span class="method-start">14426 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
