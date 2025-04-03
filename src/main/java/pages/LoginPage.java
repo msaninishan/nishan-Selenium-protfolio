@@ -1,13 +1,17 @@
 package pages;
 
+import java.time.Duration;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import utils.AllureUtils;
 import utils.ConfigReader;
+import utils.WaitUtils;
 
 public class LoginPage {
 	private WebDriver driver;
+	private WaitUtils wait;
 
 	private By usernameField = By.id("user-name");
 	private By passwordFiled = By.id("password");
@@ -16,11 +20,13 @@ public class LoginPage {
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
+		wait = new WaitUtils(driver, Duration.ofSeconds(30));
 
 	}
 
 	public InventoryPage login() {
-		driver.findElement(usernameField).clear();
+
+		wait.waitForVisibility(driver.findElement(usernameField)).clear();
 		driver.findElement(usernameField).sendKeys(ConfigReader.getProperty("username"));
 		driver.findElement(passwordFiled).clear();
 		driver.findElement(passwordFiled).sendKeys(ConfigReader.getProperty("password"));

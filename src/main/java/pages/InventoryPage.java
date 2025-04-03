@@ -1,5 +1,6 @@
 package pages;
 
+import java.time.Duration;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -8,8 +9,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
+import utils.WaitUtils;
+
 public class InventoryPage {
 	private WebDriver driver;
+	private WaitUtils wait;
 
 	private By inventory_List = By.className("inventory_list");
 	private By productSortContainer = By.className("product_sort_container");
@@ -19,6 +23,7 @@ public class InventoryPage {
 	
 	public InventoryPage(WebDriver driver) {
 		this.driver = driver;
+		wait = new WaitUtils(driver, Duration.ofSeconds(30));
 
 	}
 
@@ -29,7 +34,7 @@ public class InventoryPage {
 	}
 
 	public void selectSortingOption(String optionText) {
-		WebElement dropdown = driver.findElement(productSortContainer);
+		WebElement dropdown = wait.waitForVisibility(driver.findElement(productSortContainer));
 		Select select = new Select(dropdown);
 		select.selectByVisibleText(optionText);
 	}
