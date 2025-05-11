@@ -1,0 +1,14 @@
+# .gitignore
+
+# Maven build
+target/
+
+# Allure reports
+allure-results/
+allure-report/
+
+# Logs
+*.log
+
+# VS Code settings (optional)
+.vscode/
