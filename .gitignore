@@ -1,14 +1,21 @@
-# .gitignore
-
 # Maven build
-target/
+/target/
 
-# Allure reports
+# Eclipse files
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# Allure
 allure-results/
 allure-report/
+.allure/
+
+# TestNG output
+test-output/
 
 # Logs
 *.log
-
-# VS Code settings (optional)
-.vscode/
