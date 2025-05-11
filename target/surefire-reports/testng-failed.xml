@@ -10,7 +10,7 @@
         <methods>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="testCheckoutWithDifferentUsers" invocation-numbers="2"/>
+          <include name="testCheckoutWithDifferentUsers" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- tests.CompletePuchrchaseTest -->
     </classes>

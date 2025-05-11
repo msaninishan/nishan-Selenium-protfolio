@@ -1,12 +1,13 @@
-/Users/presidio/eclipse-workspace/selenium-automation/src/main/java/utils/AllureUtils.java
 /Users/presidio/eclipse-workspace/selenium-automation/src/main/java/utils/ScreenShotUtils.java
 /Users/presidio/eclipse-workspace/selenium-automation/src/main/java/utils/ConfigReader.java
-/Users/presidio/eclipse-workspace/selenium-automation/src/main/java/utils/RetryListener.java
 /Users/presidio/eclipse-workspace/selenium-automation/src/main/java/pages/CartPage.java
 /Users/presidio/eclipse-workspace/selenium-automation/src/main/java/utils/ExcelUtils.java
 /Users/presidio/eclipse-workspace/selenium-automation/src/main/java/pages/CheckoutPage.java
 /Users/presidio/eclipse-workspace/selenium-automation/src/main/java/utils/RetryAnalyzer.java
+/Users/presidio/eclipse-workspace/selenium-automation/src/main/java/driver/WebdriverFactory.java
+/Users/presidio/eclipse-workspace/selenium-automation/src/main/java/utils/WaitUtils.java
+/Users/presidio/eclipse-workspace/selenium-automation/src/main/java/utils/AllureUtils.java
+/Users/presidio/eclipse-workspace/selenium-automation/src/main/java/utils/RetryListener.java
 /Users/presidio/eclipse-workspace/selenium-automation/src/main/java/pages/InventoryPage.java
 /Users/presidio/eclipse-workspace/selenium-automation/src/main/java/pages/LoginPage.java
-/Users/presidio/eclipse-workspace/selenium-automation/src/main/java/driver/WebdriverFactory.java
 /Users/presidio/eclipse-workspace/selenium-automation/src/main/java/base/BaseTest.java

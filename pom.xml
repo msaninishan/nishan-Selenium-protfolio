@@ -75,7 +75,7 @@
             <version>3.1.2</version>
             <configuration>
             <suiteXmlFiles>
-            <suiteXmlFile>CompletePurchaseTesttestng.xml</suiteXmlFile>
+            <suiteXmlFile>AllTesttestng.xml</suiteXmlFile>
             </suiteXmlFiles>
             </configuration>
             
